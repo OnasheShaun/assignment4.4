@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the College Tech Club, its mission, activities, and student leadership.">
+    <title>About | College Tech Club</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>About Our Club</h1>
+        <p>Our mission, community, and goals</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Who We Are</h2>
+            <p>
+                The College Tech Club is a student community focused on
+                technology, creativity, teamwork, and practical learning.
+                Members can explore new ideas and develop technical skills.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+            <ul>
+                <li>Encourage students to learn programming and technology.</li>
+                <li>Promote teamwork and problem-solving.</li>
+                <li>Organize workshops and technical events.</li>
+                <li>Help students build practical projects.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Club Activities</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Learning</h3>
+                    <p>Practice web development and programming fundamentals.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Collaboration</h3>
+                    <p>Share ideas and work together on student projects.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Innovation</h3>
+                    <p>Explore creative solutions to everyday problems.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Club Leadership</h2>
+            <div class="table-wrapper">
+                <table>
+                    <caption>Sample Club Team</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Club President</td>
+                            <td>To be announced</td>
+                        </tr>
+                        <tr>
+                            <td>Technical Coordinator</td>
+                            <td>To be announced</td>
+                        </tr>
+                        <tr>
+                            <td>Event Coordinator</td>
+                            <td>To be announced</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Become a Member</h2>
+            <p>Interested in joining our community? Complete the registration form.</p>
+            <a class="btn" href="registration.html">Register Now</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 College Tech Club. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+```
+
+## 5. Registration page — `registration.html`
+
+This page demonstrates styled form controls, labels, checkboxes, a dropdown, and a submit button.
+
+```
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register your interest in joining the College Tech Club.">
+    <title>Registration | College Tech Club</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Club Registration</h1>
+        <p>Become part of our technology community</p>
+    </header>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="registration.html" aria-current="page">Registration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Student Registration Form</h2>
+            <p>Complete the form below to register your interest.</p>
+
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName"
+                           autocomplete="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           autocomplete="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student ID (optional)</label>
+                    <input type="text" id="studentId" name="studentId">
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select your course</option>
+                        <option value="electrical">Electrical Engineering</option>
+                        <option value="computer">Computer Science</option>
+                        <option value="mechanical">Mechanical Engineering</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p><strong>Areas of Interest</strong></p>
+
+                    <div class="choice">
+                        <input type="checkbox" id="web" name="interests" value="web">
+                        <label for="web">Web Development</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="checkbox" id="programming" name="interests" value="programming">
+                        <label for="programming">Programming</label>
+                    </div>
+
+                    <div class="choice">
+                        <input type="checkbox" id="robotics" name="interests" value="robotics">
+                        <label for="robotics">Robotics</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Why do you want to join?</label>
+                    <textarea id="reason" name="reason"
+                              placeholder="Write a short introduction..."></textarea>
+                </div>
+
+                <div class="form-group choice">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I confirm that the information provided is correct.</label>
+                </div>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+
+            <p class="muted">
+                Note: This is a front-end demonstration. It does not save
+                registration data to a server.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 College Tech Club. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
